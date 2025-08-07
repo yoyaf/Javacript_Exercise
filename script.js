@@ -86,3 +86,41 @@ for (let i = 0; i < n; i++) {
 };
 
 console.log(0);
+
+mensaje = 'Este es el ejercicio 9';
+console.log(mensaje);
+
+let num1 = prompt('Ingrese un número: ', 0);
+let num2 = prompt('Ingrese otro número: ', 0);
+
+if (num2 !== 0){
+    console.log('Suma', parseFloat(num1) + parseFloat(num2) );
+    console.log('Resta', num1 - num2);
+    console.log('División', num1 / num2);
+    console.log('Multiplicación ', num1 * num2);
+} else {
+    console.log('Suma', parseFloat(num1) + parseFloat(num2) );
+    console.log('Resta', num1 - num2);
+    console.log('Multiplicación ', num1 * num2);
+};
+
+mensaje = 'Este es el ejercicio 10';
+console.log(mensaje);
+
+num1 = prompt('Ingrese un número', 0);
+num2 = prompt('Ingrese un número', 0);
+
+for (let i = num1; i < parseInt(num2); i++){
+    console.log(i);
+};
+
+mensaje = 'Este es el ejercicio 11';
+console.log(mensaje);
+
+const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+let mes = prompt('Ingrese un número (entre 1 y 12) y le diré a que mes corresponde: ', 0);
+if (mes > 0 & mes < 11){
+    console.log(meses[mes-1]);
+} else {console.log('No corresponde a un mes del año')};
+
