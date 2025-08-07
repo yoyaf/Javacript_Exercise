@@ -89,11 +89,12 @@ console.log(0);
 
 mensaje = 'Este es el ejercicio 9';
 console.log(mensaje);
+alert('Vamos a realizar las cuatro operaciones básicas!')
 
 let num1 = prompt('Ingrese un número: ', 0);
 let num2 = prompt('Ingrese otro número: ', 0);
 
-if (num2 !== 0){
+if (parseFloat(num2) !== 0){
     console.log('Suma', parseFloat(num1) + parseFloat(num2) );
     console.log('Resta', num1 - num2);
     console.log('División', num1 / num2);
@@ -121,6 +122,6 @@ const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', '
 
 let mes = prompt('Ingrese un número (entre 1 y 12) y le diré a que mes corresponde: ', 0);
 if (mes > 0 & mes < 11){
-    console.log(meses[mes-1]);
+    console.log('El mes correspondiente es: ' + meses[mes-1]);
 } else {console.log('No corresponde a un mes del año')};
 
